@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Product - High Quality Features and Specifications">
+    <title>Premium Product | Gushwork</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Header (Hidden Initially, Appears on Scroll) -->
+    <header class="sticky-header" id="stickyHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>Premium Product</h2>
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#specs">Specifications</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Product Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Product Image Carousel -->
+                <div class="product-carousel">
+                    <div class="carousel-container">
+                        <button class="carousel-nav prev" id="prevBtn" aria-label="Previous image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="carouselTrack">
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop" alt="Product view 1">
+                                    <div class="zoom-overlay"></div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop" alt="Product view 2">
+                                    <div class="zoom-overlay"></div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop" alt="Product view 3">
+                                    <div class="zoom-overlay"></div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&h=800&fit=crop" alt="Product view 4">
+                                    <div class="zoom-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-nav next" id="nextBtn" aria-label="Next image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Carousel Thumbnails -->
+                    <div class="carousel-thumbnails" id="thumbnails"></div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <span class="product-badge">New Arrival</span>
+                    <h1 class="product-title">Premium Wireless Headphones</h1>
+                    <p class="product-description">
+                        Experience superior sound quality with our premium wireless headphones. 
+                        Designed for audiophiles and everyday users alike, featuring advanced 
+                        noise cancellation and exceptional comfort.
+                    </p>
+                    
+                    <!-- Features List -->
+                    <ul class="features-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Active Noise Cancellation</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>40-Hour Battery Life</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Premium Sound Quality</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Bluetooth 5.0 Connectivity</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Comfortable Over-Ear Design</span>
+                        </li>
+                    </ul>
+
+                    <!-- Price and CTA -->
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span class="price-label">Price</span>
+                            <div class="price-wrapper">
+                                <span class="price-old">$399.99</span>
+                                <span class="price-current">$299.99</span>
+                            </div>
+                            <span class="price-save">Save $100</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client/Brand Logos Section -->
+    <section class="brands">
+        <div class="container">
+            <h3 class="brands-title">Trusted by Leading Brands</h3>
+            <div class="brands-grid">
+                <div class="brand-logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                        <rect x="10" y="10" width="100" height="20" rx="4" fill="#E5E7EB"/>
+                        <text x="60" y="27" text-anchor="middle" fill="#6B7280" font-size="12" font-weight="600">BRAND 1</text>
+                    </svg>
+                </div>
+                <div class="brand-logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                        <rect x="10" y="10" width="100" height="20" rx="4" fill="#E5E7EB"/>
+                        <text x="60" y="27" text-anchor="middle" fill="#6B7280" font-size="12" font-weight="600">BRAND 2</text>
+                    </svg>
+                </div>
+                <div class="brand-logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                        <rect x="10" y="10" width="100" height="20" rx="4" fill="#E5E7EB"/>
+                        <text x="60" y="27" text-anchor="middle" fill="#6B7280" font-size="12" font-weight="600">BRAND 3</text>
+                    </svg>
+                </div>
+                <div class="brand-logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                        <rect x="10" y="10" width="100" height="20" rx="4" fill="#E5E7EB"/>
+                        <text x="60" y="27" text-anchor="middle" fill="#6B7280" font-size="12" font-weight="600">BRAND 4</text>
+                    </svg>
+                </div>
+                <div class="brand-logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                        <rect x="10" y="10" width="100" height="20" rx="4" fill="#E5E7EB"/>
+                        <text x="60" y="27" text-anchor="middle" fill="#6B7280" font-size="12" font-weight="600">BRAND 5</text>
+                    </svg>
+                </div>
+                <div class="brand-logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                        <rect x="10" y="10" width="100" height="20" rx="4" fill="#E5E7EB"/>
+                        <text x="60" y="27" text-anchor="middle" fill="#6B7280" font-size="12" font-weight="600">BRAND 6</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section class="specifications" id="specs">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-table-wrapper">
+                <table class="specs-table">
+                    <tbody>
+                        <tr>
+                            <td class="spec-label">Driver Size</td>
+                            <td class="spec-value">40mm Dynamic Drivers</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Frequency Response</td>
+                            <td class="spec-value">20Hz - 20kHz</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Impedance</td>
+                            <td class="spec-value">32 Ohms</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Bluetooth Version</td>
+                            <td class="spec-value">5.0</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Battery Life</td>
+                            <td class="spec-value">40 Hours (ANC Off) / 30 Hours (ANC On)</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Charging Time</td>
+                            <td class="spec-value">2.5 Hours (Full Charge)</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Weight</td>
+                            <td class="spec-value">250g</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Connectivity</td>
+                            <td class="spec-value">Bluetooth 5.0, 3.5mm Audio Jack</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Noise Cancellation</td>
+                            <td class="spec-value">Active Noise Cancellation (ANC)</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-label">Warranty</td>
+                            <td class="spec-value">2 Years International Warranty</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Benefits Cards Grid -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Product</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                    </div>
+                    <h3>Crystal Clear Audio</h3>
+                    <p>Experience studio-quality sound with our advanced audio technology and premium drivers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Long Battery Life</h3>
+                    <p>Enjoy up to 40 hours of continuous playback on a single charge with fast charging support.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Noise Cancellation</h3>
+                    <p>Block out distractions with advanced active noise cancellation technology.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Comfortable Design</h3>
+                    <p>Ergonomically designed with premium materials for all-day comfort and durability.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3>Wireless Freedom</h3>
+                    <p>Bluetooth 5.0 connectivity ensures stable connection up to 30 feet away.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Built with high-quality materials and backed by a 2-year warranty for peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does the battery last?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The battery lasts up to 40 hours with ANC off and 30 hours with ANC on. It also supports fast charging - just 10 minutes of charging gives you 5 hours of playback.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it compatible with all devices?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Our headphones work with any Bluetooth-enabled device including smartphones, tablets, laptops, and smart TVs. They also include a 3.5mm audio jack for wired connections.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I use them for phone calls?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! The built-in microphone with noise reduction technology ensures crystal-clear voice calls even in noisy environments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's included in the box?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The package includes the headphones, a premium carrying case, USB-C charging cable, 3.5mm audio cable, airplane adapter, and user manual.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your return policy?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee. If you're not completely satisfied, return the product in its original condition for a full refund.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does the noise cancellation work?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our Active Noise Cancellation (ANC) uses advanced algorithms to detect and cancel out ambient noise, providing an immersive listening experience in any environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Premium Product</h3>
+                    <p>Experience the best in audio technology with our premium wireless headphones.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#specs">Specifications</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@premiumproduct.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Product. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
